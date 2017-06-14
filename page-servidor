@@ -1,0 +1,41 @@
+> Página do servidor:
+div id="resumo":
+	a href="LINK PARA REMUNERAÇÃO" title="Remuneração individual do servidor"
+table summary="Detalhes do Servidor":
+	tbody:
+		2º tr:
+			td class="tituloDetalhe" "Cargo Emprego:"
+			td:
+				strong:
+					NOME DO CARGO
+		3º tr:
+			td class="tituloDetalhe" "&nbsp; &nbsp;Classe:"
+			td:
+				strong:
+					VALOR
+		6º tr:
+			td class="tituloDetalhe" "&nbsp; &nbsp;Nível:"
+			td:
+				strong:
+					VALOR
+		8º tr:
+			td class="tituloDetalhe" "&nbsp; &nbsp;UORG:"
+			td:
+				strong:
+					NOME DO DEPARTAMENTO
+		
+> Página de remuneração do servidor:
+http://www.portaldatransparencia.gov.br/servidores/Servidor-DetalhaRemuneracao.asp?Op=2&IdServidor=[ID Servidor]&CodOrgao=[Codigo da UFRN]&CodOS=15000&bInformacaoFinanceira=True&Ano=[ANO]&Mes=[1 <= MES <= 12]
+	Pode não haver dados para aquele servidor naquele mês, nesse caso só haverá um td na tabela, assim: 
+	<td colspan="5" class="">Servidor sem ficha financeira no mês </td>
+	Caso isso aconteça, tentar um mês anterior
+
+table:
+	tbody:
+		tr class="remuneracaodetalhe"
+			td 
+				"APENAS ESPAÇO VAZIO"
+			td 
+				"Remuneração básica bruta"
+			td class="colunaValor"
+				VALOR
