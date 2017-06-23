@@ -1,0 +1,14 @@
+Código da UFRN: 26243
+Número de servidores: 6207
+http://www.portaldatransparencia.gov.br/servidores/OrgaoExercicio-ListaServidores.asp?CodOrg=26243&Pagina=x
+div id="listagem":
+	table summary="Lista de servidores por Nível da Função">
+		tbody:
+			ignorar primeiro tr, é um header
+			tr:
+				td: CPF
+				td: a href=<link-page-servidor> "NOME"
+				td: nome da instituição
+			maximo de 15 tr por pag
+div id="paginacao"
+	p class="paginaAtual" "Página x/MAX"
